@@ -1,0 +1,755 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px; /* Added padding for mobile */
+}
+
+.main {
+    background-image: url(assets/photos/background.jpeg);
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover; /* Fixed: changed from max(1200px, 100vw) */
+    background-position: center;
+}
+
+.main .blackbox {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.70;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 1200px; /* Changed from 60vw for better responsiveness */
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+    color: rgb(229, 9, 20);
+    width: 114px;
+    position: relative;
+    z-index: 1;
+}
+
+.arrow-btn {
+    background-color: rgba(0, 0, 0, 0.043);
+    color: white;
+    border: 1px solid #ffffffa2;
+    padding: 2px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: 300;
+    position: relative;
+    z-index: 1;
+}
+
+.btn {
+    background-color: rgb(229, 9, 20);
+    color: white;
+    border: none;
+    padding: 2px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: 300;
+    position: relative;
+    z-index: 1;
+}
+
+.first-input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 0 20px; /* Added padding */
+}
+
+.first-input input {
+    background-color: #0f0f0f;
+    border: 1px solid #ffff;
+    color: #ffff;
+    width: 400px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.first-input button {
+    background-color: rgb(229, 9, 20);
+    color: white;
+    border: none;
+    padding: 15px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.hero {
+    font-family: "Martel Sans", sans-serif;
+    position: relative;
+    height: calc(100% - 62px);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px; /* Added padding */
+}
+
+.hero > :first-child,
+.hero > :nth-child(2) {
+    font-size: 56px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.hero > :nth-child(3) {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.hero > :nth-child(4) {
+    margin: 16px 0px 10px 0px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.hero button {
+    background-color: rgb(229, 9, 20);
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hr {
+    width: 100%;
+    padding: 3px 3px;
+    border: none;
+    box-shadow: 0px 19px 28px 20px #293a53;
+    height: 1px;
+    background-color: red;
+}
+
+.all-section {
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 40px 0px 20px 0px;
+}
+
+.trand-freame {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 0px 20px;
+}
+
+.trand-box {
+    width: 200px;
+    height: 280px;
+    background-color: white;
+    border-radius: 10px;
+    background-size: cover;
+    position: relative;
+}
+
+.trand-box:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+.trand-box span {
+    font-family: "Open Sans", sans-serif;
+    -webkit-text-stroke-width: 10px;
+    line-height: 1;
+    display: inline-block;
+    height: 1em;
+    position: absolute;
+    font-weight: 700;
+    left: -22px;
+    top: 165px;
+    -webkit-text-stroke: 0.1rem rgb(255, 255, 255);
+    text-shadow: 0 0 1.5rem black;
+    color: black;
+    font-size: 100px;
+}
+
+.trand-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover; /* Changed from fill to cover */
+}
+
+.join-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0px 0px 20px 0px;
+    align-items: center;
+}
+
+.about-box {
+    position: relative;
+    width: 290px;
+    height: 290px;
+    background: linear-gradient(135deg, #1a1f40 0%, #210e17 100%);
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px 20px 0px 20px;
+}
+
+.about-text :first-child {
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.about-text :nth-child(2) {
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.about-icone {
+    position: absolute;
+    bottom: 20px; /* Changed from 50px for better mobile view */
+    right: 20px; /* Changed from 40px */
+    width: 40px;
+    height: 40px;
+}
+
+.about-icone svg {
+    width: 100%;
+    height: 100%;
+}
+
+.q-boxs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.q-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.q-title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    color: white;
+    background-color: #2d2d2d;
+    font-size: 24px;
+    padding: 18px;
+    font-weight: 400;
+    align-items: center;
+    cursor: pointer;
+}
+
+.q-title:hover {
+    background: #454242;
+}
+
+.pluse-icon img {
+    filter: brightness(0) invert(1);
+    width: 30px; /* Fixed size for plus icon */
+    height: 30px;
+}
+
+.Ready-to-watch {
+    padding: 30px 20px; /* Added horizontal padding */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Ready-to-watch p {
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.Ready-to-watch input {
+    background-color: #0f0f0f;
+    border: 1px solid #ffff;
+    color: #ffff;
+    width: 400px;
+    padding: 15px; /* Increased padding */
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.Ready-to-watch button {
+    background-color: rgb(229, 9, 20);
+    color: white;
+    border: none;
+    padding: 15px 25px; /* Adjusted padding */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    white-space: nowrap; /* Prevents button text from wrapping */
+}
+
+.Questions {
+    display: flex;
+    justify-content: start;
+    padding: 50px 20px 20px; /* Added horizontal padding */
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.Questions span {
+    color: rgba(255, 255, 255, 0.687);
+    font-size: 16px;
+}
+
+.Questions a {
+    color: rgba(255, 255, 255, 0.687);
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 0 20px 60px; /* Added horizontal padding */
+    font-size: 16px;
+}
+
+.footer-items {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px; /* Added gap between links */
+}
+
+.footer-items a {
+    color: rgba(255, 255, 255, 0.687);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-items a:hover {
+    text-decoration: underline;
+}
+
+.translate-btn {
+    padding: 0 20px; /* Added padding */
+}
+
+.translate-btn button {
+    margin: 0;
+}
+
+.netflix {
+    color: rgba(255, 255, 255, 0.687);
+    font-size: 16px;
+    padding: 30px 20px; /* Added horizontal padding */
+}
+
+.note {
+    padding: 0 20px 100px; /* Added horizontal padding */
+}
+
+.note span {
+    color: rgba(255, 255, 255, 0.566);
+    font-size: 16px;
+}
+
+.note a {
+    color: rgba(255, 255, 255, 0.566);
+    margin-left: 5px;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+/* Large devices (desktops, 1200px and up) */
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .trand-box {
+        width: 180px;
+        height: 252px;
+    }
+    
+    .trand-box span {
+        font-size: 80px;
+        left: -18px;
+        top: 145px;
+    }
+}
+
+/* Medium devices (tablets, 992px and down) */
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    nav {
+        max-width: 100%;
+    }
+    
+    .hero > :first-child,
+    .hero > :nth-child(2) {
+        font-size: 48px;
+    }
+    
+    .hero > :nth-child(3) {
+        font-size: 18px;
+    }
+    
+    .trand-freame {
+        gap: 30px;
+    }
+    
+    .trand-box {
+        width: 160px;
+        height: 224px;
+    }
+    
+    .trand-box span {
+        font-size: 70px;
+        left: -16px;
+        top: 130px;
+    }
+    
+    .join-box {
+        gap: 15px;
+    }
+    
+    .about-box {
+        width: 260px;
+        height: 280px;
+    }
+    
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* Small devices (landscape phones, 768px and down) */
+@media screen and (max-width: 768px) {
+    .hero > :first-child,
+    .hero > :nth-child(2) {
+        font-size: 36px;
+    }
+    
+    .hero > :nth-child(3) {
+        font-size: 16px;
+    }
+    
+    .hero > :nth-child(4) {
+        font-size: 14px;
+    }
+    
+    .first-input input {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .first-input button {
+        width: 100%;
+        max-width: 400px;
+        margin-left: 0;
+    }
+    
+    .title {
+        font-size: 20px;
+        padding: 30px 0px 15px 0px;
+    }
+    
+    .trand-freame {
+        gap: 20px;
+    }
+    
+    .trand-box {
+        width: 140px;
+        height: 196px;
+    }
+    
+    .trand-box span {
+        font-size: 60px;
+        left: -14px;
+        top: 115px;
+    }
+    
+    .about-box {
+        width: 100%;
+        max-width: 350px;
+        height: 260px;
+    }
+    
+    .about-text :first-child {
+        font-size: 20px;
+    }
+    
+    .about-text :nth-child(2) {
+        font-size: 14px;
+    }
+    
+    .q-title {
+        font-size: 18px;
+        padding: 15px;
+    }
+    
+    .pluse-icon img {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .Ready-to-watch input {
+        width: 100%;
+    }
+    
+    .Ready-to-watch button {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media screen and (max-width: 576px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 15px 20px;
+        gap: 10px;
+    }
+    
+    nav img {
+        width: 100px;
+    }
+    
+    nav > div {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .arrow-btn, .btn {
+        font-size: 14px;
+        padding: 4px 12px;
+        margin-left: 0;
+    }
+    
+    .hero {
+        padding-top: 20px;
+    }
+    
+    .hero > :first-child,
+    .hero > :nth-child(2) {
+        font-size: 28px;
+    }
+    
+    .hero > :nth-child(3) {
+        font-size: 14px;
+    }
+    
+    .hero > :nth-child(4) {
+        font-size: 12px;
+    }
+    
+    .first-input {
+        padding: 0 10px;
+    }
+    
+    .first-input input,
+    .first-input button {
+        font-size: 14px;
+        padding: 12px;
+    }
+    
+    .title {
+        font-size: 18px;
+        padding: 25px 0px 10px 0px;
+    }
+    
+    .trand-freame {
+        gap: 15px;
+        padding: 0 10px;
+    }
+    
+    .trand-box {
+        width: calc(50% - 10px);
+        max-width: 160px;
+        height: auto;
+        aspect-ratio: 2/3;
+    }
+    
+    .trand-box span {
+        font-size: 50px;
+        left: -10px;
+        top: 60%;
+    }
+    
+    .join-box {
+        gap: 10px;
+    }
+    
+    .about-box {
+        height: auto;
+        min-height: 240px;
+    }
+    
+    .about-text {
+        padding: 15px;
+    }
+    
+    .about-icone {
+        bottom: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .q-title {
+        font-size: 16px;
+        padding: 12px;
+    }
+    
+    .pluse-icon img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    footer {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .footer-items {
+        text-align: center;
+        align-items: center;
+    }
+    
+    .Questions {
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .Questions span, .Questions a {
+        font-size: 14px;
+    }
+    
+    .netflix {
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    .note {
+        text-align: center;
+    }
+    
+    .note span, .note a {
+        font-size: 12px;
+    }
+}
+
+/* Small height screens */
+@media screen and (max-height: 600px) and (max-width: 768px) {
+    .main {
+        height: auto;
+        min-height: 100vh;
+    }
+    
+    .hero {
+        padding: 40px 20px;
+    }
+}
+
+/* Fix for very small devices */
+@media screen and (max-width: 360px) {
+    .hero > :first-child,
+    .hero > :nth-child(2) {
+        font-size: 24px;
+    }
+    
+    .trand-box {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .trand-box span {
+        font-size: 45px;
+    }
+    
+    .arrow-btn, .btn {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
