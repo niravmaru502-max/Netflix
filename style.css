@@ -179,7 +179,7 @@ nav img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 30px;
     padding: 0px 20px;
 }
 
@@ -225,7 +225,7 @@ nav img {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 12px;
     padding: 0px 0px 20px 0px;
     align-items: center;
 }
@@ -754,3 +754,4 @@ footer {
     }
 
 }
+
