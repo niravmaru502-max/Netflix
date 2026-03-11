@@ -14,7 +14,7 @@
 }
 
 .main {
-    background-image: url(assets/photos/background.jpeg);
+    background-image: url(background.jpeg);
     height: 100vh;
     position: relative;
     background-repeat: no-repeat;
@@ -752,4 +752,5 @@ footer {
         font-size: 12px;
         padding: 4px 8px;
     }
+
 }
